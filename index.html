@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nivesh AI - AI-Powered Financial Assistant</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @keyframes glow {
+            0% { box-shadow: 0 0 5px #8B5CF6; }
+            50% { box-shadow: 0 0 20px #8B5CF6; }
+            100% { box-shadow: 0 0 5px #8B5CF6; }
+        }
+        .glow-hover:hover {
+            animation: glow 1.5s infinite;
+        }
+        .gradient-bg {
+            background: linear-gradient(45deg, #1a1a1a 0%, #2d1b69 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100">
+    <!-- Navbar -->
+    <nav class="fixed w-full bg-gray-900/90 backdrop-blur-md z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-purple-500">Nivesh AI</div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="hover:text-purple-500 transition">Home</a>
+                <a href="#features" class="hover:text-purple-500 transition">Features</a>
+                <a href="#how-it-works" class="hover:text-purple-500 transition">How It Works</a>
+                <a href="#testimonials" class="hover:text-purple-500 transition">Testimonials</a>
+                <a href="#contact" class="hover:text-purple-500 transition">Contact</a>
+            </div>
+            <button class="bg-purple-600 hover:bg-purple-700 px-6 py-2 rounded-full transition">Get Started</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen pt-32 pb-20 gradient-bg" data-aos="fade-up">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-12 md:mb-0">
+                <h1 class="text-5xl md:text-6xl font-bold mb-6">Your AI-Powered Financial Guide</h1>
+                <p class="text-xl mb-8 text-gray-400">Nivesh AI helps you make smarter investment decisions with real-time insights and expert analysis.</p>
+                <div class="flex gap-4">
+                    <button class="bg-purple-600 hover:bg-purple-700 px-8 py-4 rounded-full text-lg transition">Try for Free</button>
+                    <button class="border border-gray-600 hover:border-purple-500 px-8 py-4 rounded-full text-lg transition">Learn More</button>
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <div class="bg-gray-800/50 rounded-xl p-6 backdrop-blur-lg">
+                    <div class="h-64 bg-gray-700/30 rounded-lg animate-pulse"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16" data-aos="fade-up">Why Choose Nivesh AI?</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="feature-card p-6 bg-gray-800 rounded-xl hover:transform hover:scale-105 transition">
+                    <i class="fas fa-brain text-4xl text-purple-500 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Smart Investment Insights</h3>
+                    <p class="text-gray-400">AI-driven market predictions and trend analysis</p>
+                </div>
+                <!-- Repeat similar cards for other features -->
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="py-20 bg-gray-900/50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16" data-aos="fade-up">How Nivesh AI Works</h2>
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="step-card p-6 text-center" data-aos="zoom-in">
+                    <div class="w-16 h-16 bg-purple-500 rounded-full mx-auto mb-4 flex items-center justify-center">1</div>
+                    <h3 class="text-xl font-bold mb-2">Sign Up</h3>
+                    <p class="text-gray-400">Create your free account</p>
+                </div>
+                <!-- Repeat similar steps -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 gradient-bg">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16" data-aos="fade-up">What Our Users Say</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="testimonial-card p-6 bg-gray-800 rounded-xl" data-aos="flip-left">
+                    <p class="mb-4">"Nivesh AI transformed how I manage investments!"</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full bg-gray-500 mr-4"></div>
+                        <div>
+                            <h4 class="font-bold">John Smith</h4>
+                            <p class="text-gray-400">Investor</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat testimonials -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold text-purple-500 mb-4">Nivesh AI</h3>
+                    <p class="text-gray-400">Making smart investing accessible</p>
+                </div>
+                <!-- Add footer links and social icons -->
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                © 2023 Nivesh AI. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            easing: 'ease-in-out'
+        });
+    </script>
+</body>
+</html>
